@@ -153,10 +153,14 @@ export default function App() {
       <button
         className="span-two"
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
+        id="opers"
       >
         AC
       </button>
-      <button onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
+      <button
+        onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}
+        id="opers"
+      >
         DEL
       </button>
       <OperationButton operation="÷" dispatch={dispatch} className="ops" />
@@ -177,6 +181,7 @@ export default function App() {
       <button
         className="span-two"
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
+        id="opers"
       >
         =
       </button>

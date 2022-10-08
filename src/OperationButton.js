@@ -7,6 +7,7 @@ export default function OperationButton({ dispatch, operation }) {
       onClick={() =>
         dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: { operation } })
       }
+      id="opers"
     >
       {operation}
     </button>
